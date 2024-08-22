@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayna's Haven Medical Facility</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 0.6s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-grey text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-green-900 bg-opacity-500 backdrop-filter backdrop-blur-lg text-white py-3">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="./images/logo.jpeg" alt="Rayna's HavenLogo" class="rounded-full h-12 w-12">
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-pink-500">Home</a></li>
+                <li><a href="#about" class="hover:text-pink-500">About Us</a></li>
+                <li><a href="#services" class="hover:text-pink-500">Services</a></li>
+                <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-green-50 text-white py-60 relative" 
+    style="background-image: url('./images/back.jpg'); background-size: cover; 
+    background-position: center;">
+        <div class="container mx-auto text-center slide-in">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Rayna's Haven Medical Facility</h1>
+            <p class="text-2xl mb-8">Quality Care for Your Health and Well-being</p>
+            <a href="#services" class="bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-lg">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto text-center slide-in">
+            <h2 class="text-3xl font-bold text-darkblue-500 mb-6">About Us</h2>
+            <p class="text-gray-600 mb-8">Rayna's Haven is committed to providing high-quality medical care with compassion and dedication. Our team of experienced professionals is here to serve you.</p>
+            <div class="flex justify-center">
+                <img src="./images/bg-team.jpg" alt="Medical Team" class="rounded-lg shadow-lg w-1/2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-cyan-500 text-white">
+        <div class="container mx-auto text-center slide-in">
+            <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i class="fas fa-stethoscope text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">General Consultation</h3>
+                    <p class="text-gray-600">Comprehensive medical consultations to address your health concerns.</p>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i class="fas fa-heartbeat text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Cardiology</h3>
+                    <p class="text-gray-600">Expert cardiology services to keep your heart healthy.</p>
+                </div>
+                
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i class="fas fa-syringe text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Vaccination</h3>
+                    <p class="text-gray-600">Vaccination services to protect you and your family.</p>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i class="fa-solid fa-truck-medical text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Emergency Services</h3>
+                    <p class="text-gray-600">For immediate treatment of urgent and critical conditions.</p>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i class="fa-solid fa-bed-pulse text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Inpatient Services</h3>
+                    <p class="text-gray-600">Vaccination services to protect you and your family.</p>
+                </div>
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
+                    <i class="fa-solid fa-house-medical text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Outpatient Services</h3>
+                    <p class="text-gray-600">Vaccination services to protect you and your family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-darkblue-500 text-black">
+    <div class="container mx-auto text-center slide-in">
+        <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+        <p class="mb-8">Reach out to us for any inquiries or to book an appointment.</p>
+        <form action="./contact.php" method="post" class="max-w-lg mx-auto border border-white rounded-lg p-6 shadow-md">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-800 text-sm font-bold mb-2">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" class="w-full py-3 px-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-800 text-sm font-bold mb-2">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" class="w-full py-3 px-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-800 text-sm font-bold mb-2">Your Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." class="w-full py-3 px-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+            </div>
+            <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-pink-500">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <ul class="flex justify-center space-x-6 mb-4">
+                <li><a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p>&copy; 2024 Rayna's Haven Medical Facility. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
